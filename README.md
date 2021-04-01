@@ -24,7 +24,8 @@ Building a HA architecture using terraform.
    git add .
    git commit -m <message>
    git remote add origin https://github.com/IsmohiK/GISC_COE_Terrafrom_project.git
-   git push --all https://github.com/IsmohiK/GISC_COE_Terrafrom_project.git
+   git checkout -b <branch name>
+   git push -u origin <branch>
    ```
    
 
