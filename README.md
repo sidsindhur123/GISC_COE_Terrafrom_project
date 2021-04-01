@@ -19,6 +19,7 @@ Building a HA architecture using terraform.
    
 5. Commands to push the changes
    ```
+   Navigate to the folder where you have cloned the repo. Example : C:\GISC_COE_Terrafrom_project-main
    git init
    git add .
    git commit -m <message>
