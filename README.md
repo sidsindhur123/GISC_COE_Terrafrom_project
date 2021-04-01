@@ -7,8 +7,8 @@ Building a HA architecture using terraform.
 1. Make sure You have python installed in the system. Install the necessary libraries per requirements.txt 
    (`pip install -r scripts/requirements.txt`).
 
-2. Navigate to the folder where you have cloned the repo. Example : `C:\GISC_COE_Terrafrom_project-main`
-3. Run the script with `python scripts/main.py`
+2. Navigate to the folder where you have cloned the repo. Example : `C:\GISC_COE_Terrafrom_project-main` in cmd.
+3. Run the script with command `python scripts/main.py`
 4. When running the script it will prompted to add profilename/environment name as
    ```
    Enter the user profile name for the aws provider
@@ -19,7 +19,7 @@ Building a HA architecture using terraform.
    
 5. Commands to push the changes
    ```
-   Navigate to the folder where you have cloned the repo. Example : C:\GISC_COE_Terrafrom_project-main
+   Navigate to the folder where you have cloned the repo. Example : C:\GISC_COE_Terrafrom_project-main in git bash
    git init
    git add .
    git commit -m <message>
