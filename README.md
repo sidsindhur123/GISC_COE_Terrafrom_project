@@ -16,5 +16,14 @@ Building a HA architecture using terraform.
    Enter the profile name Example : **default**
 
    On pressing enter it will perform terraform operations as defined in the tf files.
-
+   
+5. Commands to push the changes
+   ```
+   git init
+   git add .
+   git commit -m <message>
+   git remote add origin https://github.com/IsmohiK/GISC_COE_Terrafrom_project.git
+   git push --all https://github.com/IsmohiK/GISC_COE_Terrafrom_project.git
+   ```
+   
 
