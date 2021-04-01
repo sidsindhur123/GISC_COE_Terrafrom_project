@@ -1,0 +1,9 @@
+description: Terraform
+params:
+  default:
+    ami-name: ami-05b622b5fa0269787
+    desiredCapacity: 1
+    instance_type: t2.micro
+    profile: default
+    region: us-west-2
+    resourceName: demo_app
