@@ -25,7 +25,7 @@ Building a HA architecture using terraform.
    ```
    On pressing enter it will perform terraform operations as defined in the tf files.
    
-6. Run the script again to link the tfstate file to the AWS s3 backend
+6. Run the script again to link the tfstate file to the AWS s3 backend. Before that do the below and then follow step 3 to 5
     ```
    1. Uncomment line from 1 to 4 before running the python script for the environment you are working in 
    2. Make sure line in PythonTerraform.py 41 is commented and 40 in uncommented
