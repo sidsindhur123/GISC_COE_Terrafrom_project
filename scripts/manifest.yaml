@@ -2,8 +2,24 @@ description: Terraform
 params:
   default:
     ami-name: ami-05b622b5fa0269787
-    desiredCapacity: 1
+  dev:
+    desiredCapacity: 2
+    dynamodb_name: gisc_terraform_remote_backend_state_lock_dev
     instance_type: t2.micro
-    profile: default
+    profile: dev
     region: us-west-2
-    resourceName: demo_app
+    resourceName: dev_app
+    s3_bucket_name: gisc-terraform-remote-backend-state-dev
+    environment: dev
+    s3_path: dev/terraform.tfstate
+
+  test:
+    desiredCapacity: 1
+    dynamodb_name: gisc_terraform_remote_backend_state_lock_test
+    instance_type: t2.micro
+    profile: test
+    region: us-west-2
+    resourceName: test_app
+    s3_bucket_name: gisc-terraform-remote-backend-state-test
+    environment: test
+    s3_path: test/terraform.tfstate

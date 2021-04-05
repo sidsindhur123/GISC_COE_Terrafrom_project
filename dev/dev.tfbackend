@@ -1,0 +1,5 @@
+bucket = "gisc-terraform-remote-backend-state-dev"
+key = "dev/terraform.tfstate"
+region = "us-west-2"
+dynamodb_table = "gisc_terraform_remote_backend_state_lock_dev"
+encrypt = true
