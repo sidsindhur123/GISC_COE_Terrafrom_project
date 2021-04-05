@@ -6,18 +6,32 @@ Building a HA architecture using terraform.
 
 1. Make sure You have python installed in the system. Install the necessary libraries per requirements.txt 
    (`pip install -r scripts/requirements.txt`).
-
-2. Navigate to the folder where you have cloned the repo. Example : `C:\GISC_COE_Terrafrom_project-main` in cmd.
-3. Run the script with command `python scripts/main.py`
-4. When running the script it will prompted to add profilename/environment name as
+2. Before Running the script do the following changes in resources.py
    ```
-   Enter the user profile name for the aws provider
+   1. Comment line from 1 to 4 before running the python script for the environment you are working in 
+   2. Make sure line in PythonTerraform.py 40 is commented and 41 in uncommented
    ```
-   Enter the profile name Example : **default**
+   We do this because we need to create the S3 bucket and dynamodb before linking the tfstate
 
+3. Navigate to the folder where you have cloned the repo. Example : `C:\GISC_COE_Terrafrom_project-main` in cmd.
+4. Run the script with command `python scripts/main.py`
+5. When running the script it will prompted to add profilename/environment name as
+   ```
+   Choose the Environment
+   1. dev
+   2. test
+   3. exit
+   Enter the chioice 1/2/3
+   ```
    On pressing enter it will perform terraform operations as defined in the tf files.
    
-5. Commands to push the changes
+6. Run the script again to link the tfstate file to the AWS s3 backend
+    ```
+   1. Uncomment line from 1 to 4 before running the python script for the environment you are working in 
+   2. Make sure line in PythonTerraform.py 41 is commented and 40 in uncommented
+   ```
+   
+Commands to push the changes
    ```
    Navigate to the folder where you have cloned the repo. Example : C:\GISC_COE_Terrafrom_project-main in git bash
    git init
