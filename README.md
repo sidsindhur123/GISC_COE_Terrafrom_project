@@ -32,7 +32,9 @@ Building a HA architecture using terraform.
    ```
 
 Please note**
-Watch closely the console output as it will ask for `Do you want to perform these actions?` during terrform apply command execution. Type `yes` and press enter.
+```
+Watch closely the console output as it will ask for "Do you want to perform these actions?" during terrform apply command execution. Type "yes" and press enter to continue with the action.
+```
 
 Commands to push the changes
    ```
