@@ -30,7 +30,10 @@ Building a HA architecture using terraform.
    1. Uncomment line from 1 to 4 before running the python script for the environment you are working in 
    2. Make sure line in PythonTerraform.py 41 is commented and 40 in uncommented
    ```
-   
+
+Please note**
+Watch closely the console output as it will ask for `Do you want to perform these actions?` during terrform apply command execution. Type `yes` and press enter.
+
 Commands to push the changes
    ```
    Navigate to the folder where you have cloned the repo. Example : C:\GISC_COE_Terrafrom_project-main in git bash
